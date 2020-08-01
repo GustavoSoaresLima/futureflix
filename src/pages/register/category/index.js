@@ -21,11 +21,8 @@ function RegisterCategory(){
   }
 
   function handleChange(eventInfo) {
-    const { getAttribute, value } = eventInfo.target;
-    setValue(
-      getAttribute('name'),
-      value
-    );
+    const { value } = eventInfo.target;
+    setValue(eventInfo.target.getAttribute('name'), value);
   }
 
   return(
