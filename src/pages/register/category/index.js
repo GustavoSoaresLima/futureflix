@@ -5,30 +5,78 @@ import { Link } from 'react-router-dom';
 
 function RegisterCategory(){
   const [categories, setCategories] = useState([]);
-  const [categoryName, setCategoryName] = useState('Food');
+
+  const initialValues = {
+    name: '',
+    description: '',
+    color: '',
+  }
+  const [values, setValues] = useState(initialValues);
+
+  function setValue(key, value) {
+    setValues({
+      ...values,
+      [key]: value, // name: 'value' / description = 'value'
+    })
+  }
+
+  function handleChange(eventInfo) {
+    const { getAttribute, value } = eventInfo.target;
+    setValue(
+      getAttribute('name'),
+      value
+    );
+  }
 
   return(
     <PageDefault>
-        <h1>Category Register: {categoryName}</h1>
+        <h1>Category Register: {values.name}</h1>
 
         <form onSubmit={function handleSubmit(eventInfo){
           eventInfo.preventDefault();
           setCategories([
             ...categories,
-            categoryName
+            values
           ]);
+
+          setValues(initialValues);
         }}>
-          {/* State */}
-          <label>
-            Category name:
-            <input
-              type="text"
-              value={categoryName}
-              onChange={  function handleFunction(eventInfo) {
-                setCategoryName(eventInfo.target.value);
-              }}
-            />
-          </label>
+
+          <div>
+            <label>
+              Category name:
+              <input
+                type="text"
+                value={values.name}
+                name="name"
+                onChange={handleChange}
+              />
+            </label>
+          </div>
+          
+          <div>
+            <label>
+              Description:
+              <textarea
+                type="text"
+                value={values.description}
+                name="description"
+                onChange={handleChange}
+              />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Color:
+              <input
+                type="color"
+                value={values.color}
+                name="color"
+                onChange={handleChange}
+              />
+            </label>
+          </div>
 
           <button>
             Register
@@ -39,7 +87,7 @@ function RegisterCategory(){
           {categories.map((categories, index) => {
             return (
               <li key={`${categories}${index}`}>
-                {categories}
+                {categories.name}
               </li>
             )
           })}
