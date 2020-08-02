@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import PageDefault from '../../../components/PageDefault';
 import { Link } from 'react-router-dom';
+import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 function RegisterCategory() {
   const [categories, setCategories] = useState([]);
@@ -27,7 +28,10 @@ function RegisterCategory() {
 
   return (
     <PageDefault>
-      <h1>Category Register: {values.name}</h1>
+      <h1>
+        Category Register:
+        {values.name}
+      </h1>
 
       <form
         onSubmit={function handleSubmit(eventInfo) {
@@ -58,7 +62,7 @@ function RegisterCategory() {
 
         <FormField
           label="Description"
-          type="text"
+          type="textarea"
           name="description"
           value={values.description}
           onChange={handleChange}
@@ -94,13 +98,15 @@ function RegisterCategory() {
           </label>
         </div> */}
 
-        <button>Register</button>
+        <Button>Register</Button>
       </form>
 
       <ul>
-        {categories.map((categories, index) => {
-          return <li key={`${categories}${index}`}>{categories.name}</li>;
-        })}
+        {categories.map((category) => (
+          <li key={`${category.id}`}>
+            {category.name}
+          </li>
+        ))}
       </ul>
 
       <Link to="/register/video">Back to video register</Link>
