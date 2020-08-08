@@ -28,7 +28,9 @@ function RegisterCategory() {
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categories';
+      const URL = window.location.hostname.includes('localhost')
+        ? 'http://localhost:8080/categories'
+        : 'https://futureflix.herokuapp.com/categories';
       fetch(URL)
         .then(async (serverResponse) => {
           if (serverResponse.ok) {
