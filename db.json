@@ -1,21 +1,185 @@
 {
-    "categories": [
-      {
-        "id": 1,
-        "title": "Front End",
-        "color": "#6BD1FF",
-        "link_extra": {
-          "text": "Formação de Front End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-front-end"
+  "categories": [
+    {
+      "title": "Money",
+      "link": "",
+      "color": "#6BD1FF",
+      "link_extra": {
+        "text": "What is Cryptocurrency? A Simple Explanation",
+        "url": "https://www.youtube.com/watch?v=6Gu2QMTAkEU"
+      },
+      "videos": [
+        {
+          "title": "What is Cryptocurrency? A Simple Explanation",
+          "url": "https://www.youtube.com/watch?v=6Gu2QMTAkEU"
+        },
+        {
+          "title": "What is Cryptocurrency? A Simple Explanation",
+          "url": "https://www.youtube.com/watch?v=6Gu2QMTAkEU"
+        },
+        {
+          "title": "How the blockchain is changing money and business | Don Tapscott",
+          "url": "https://www.youtube.com/watch?v=Pl8OlkkwRpc"
+        },
+        {
+          "title": "Decentralizing Everything with Ethereum's Vitalik Buterin | Disrupt SF 2017",
+          "url": "https://www.youtube.com/watch?v=WSN5BaCzsbo"
+        },
+        {
+          "title": "The Blockchain & Bitcoin - Computerphile",
+          "url": "https://www.youtube.com/watch?v=qcuc3rgwZAE"
+        },
+        {
+          "title": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+        },
+        {
+          "title": "Novidades do Angular v9",
+          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+        },
+        {
+          "title": "Base para aprender os frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        }        
+      ]
+    },
+    {
+      "title": "transport",
+      "color": "#00C86F",
+      "link_extra": {
+        "text": "Cursos de Back End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
+      },
+      "videos": [
+        {
+          "title": "Tesla Motors - Elon Musk - Documentary 2020",
+          "url": "https://www.youtube.com/watch?v=rD9PGi8hHvY"
+        },
+        {
+          "title": "ELON MUSK, JAY LENO AND THE 2021 CYBERTRUCK (FULL SEGMENT) | Jay Leno's Garage",
+          "url": "https://www.youtube.com/watch?v=25ZuKkbHdqM"
+        },
+        {
+          "title": "2017 Toyota Mirai Hydrogen Fuel Cell Car Test Drive Video Review",
+          "url": "https://www.youtube.com/watch?v=pSHxojRPmnM"
+        },
+        {
+          "title": "Hyundai NEXO | Fully Charged",
+          "url": "https://www.youtube.com/watch?v=EW7TFXwduYY"
+        }, 
+        {
+          "title": "Tesla Semi & Roadster Unveil",
+          "url": "https://www.youtube.com/watch?v=5RRmepp7i5g"
         }
-      }
-     ],
-    "videos": [
-      {
-        "id": 1,
-        "categoryId": 1,
-        "title": "SEO com React",
-        "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-      }
-    ]
-  }
+      ]
+    },
+    {
+      "title": "Cities",
+      "color": "#9cd33b",
+      "link_extra": {
+        "text": "Cursos de Data Science na Alura",
+        "url": "https://www.alura.com.br/formacao-data-science"
+      },
+      "videos": [
+        {
+          "title": "Toyota reveals the WOVEN CITY program: studying cities of the future",
+          "url": "https://www.youtube.com/watch?v=pfCyQvuufZw"
+        },
+        {
+          "title": "How This Town Produces No Trash",
+          "url": "https://www.youtube.com/watch?v=eym10GGidQU"
+        },
+        {
+          "title": "How Sweden is turning its waste into gold",
+          "url": "https://www.youtube.com/watch?v=14r7f9khK70"
+        },
+        {
+          "title": "Can Tiny Homes Solve Homelessness In The U.S.?",
+          "url": "https://www.youtube.com/watch?v=-9NArmUzQkA"
+        }
+      ]
+    },
+    {
+      "title": "Food",
+      "color": "orange",
+      "videos": [
+        {
+          "title": "Next Gen Farming Without Soil and 90% Less Water | GRATEFUL",
+          "url": "https://www.youtube.com/watch?v=3Ww2TP_tU7o"
+        },
+        {
+          "title": "Why the Future of Farming is in Cities - The Big Money in Vertical Farming",
+          "url": "https://www.youtube.com/watch?v=LiNI-JUFtsA"
+        },
+        {
+          "title": "Feeding Bill Gates a Fake Burger (to save the world)",
+          "url": "https://www.youtube.com/watch?v=-k-V3ESHcfA&t=661s"
+        },
+        {
+          "title": "Will Meatless Meat Be The Future Of Food?",
+          "url": "https://www.youtube.com/watch?v=3lu0-v8A9rs"
+        }
+      ]
+    },
+    {
+      "title": "Music",
+      "color": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "title": "Seaboard Block: Super Powered Keyboard",
+          "url": "https://www.youtube.com/watch?v=6SCug5kUsBs"
+        },
+        {
+          "title": "Game of Thrones theme on the Seaboard RISE",
+          "url": "https://www.youtube.com/watch?v=pFdbx8YT4dQ"
+        },
+        {
+          "title": "The Revenge: Timo Boll vs. KUKA Robot",
+          "url": "https://www.youtube.com/watch?v=lv6op2HHIuM"
+        },
+        {
+          "title": "Hang Massive - Once Again - 2011 ( hang drum duo ) ( HD )",
+          "url": "https://www.youtube.com/watch?v=xk3BvNLeNgw"
+        },
+        {
+          "title": "Bond theme song on Eigenharp",
+          "url": "https://www.youtube.com/watch?v=zcVqJh0qEMc"
+        }
+      ]
+    },
+    {
+      "title": "Aprendendo a aprender tecnologia",
+      "color": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      },
+      "videos": [
+        {
+          "title": "Como estudar melhor?",
+          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+          "title": "Faculdade",
+          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+          "title": "Frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+          "title": "A mágica do Aprendizado",
+          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+          "title": "Como aprender a programar?",
+          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        }
+      ]
+    }
+  ]
+}
