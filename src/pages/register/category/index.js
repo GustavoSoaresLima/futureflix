@@ -53,6 +53,7 @@ function RegisterCategory() {
       <form
         onSubmit={function handleSubmit(eventInfo) {
           eventInfo.preventDefault();
+
           setCategories([...categories, values]);
 
           setValues(initialValues);
@@ -120,7 +121,7 @@ function RegisterCategory() {
 
       <ul>
         {categories.map((category) => (
-          <li key={`${category.title}`}>
+          <li key={`${category.id}`}>
             {category.title}
           </li>
         ))}
